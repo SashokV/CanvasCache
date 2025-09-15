@@ -42,8 +42,9 @@ struct HomeView: View {
                     
                     HStack(spacing: 16) {
                         
-                        Button(action: {
-                        }) {
+                        ArtPieceNavigationTile(title: "Art Piece Navigation Thing", destination: ArtPieceView())
+                        
+                        NavigationLink(destination: ArtPieceView()) {
                             Rectangle()
                                 .fill(Color.gray.opacity(0.4))
                                 .frame(height: 100)
@@ -54,20 +55,7 @@ struct HomeView: View {
                                         .bold()
                                 )
                         }
-                        
-                        Button(action: {
-                            print("Button 2 tapped")
-                        }) {
-                            Rectangle()
-                                .fill(Color.gray.opacity(0.4))
-                                .frame(height: 100)
-                                .cornerRadius(12)
-                                .overlay(
-                                    Text("Art Piece 2")
-                                        .foregroundColor(.black)
-                                        .bold()
-                                )
-                        }
+
                         
                     }
                     .padding(.horizontal, 20)
