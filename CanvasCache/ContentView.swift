@@ -122,7 +122,7 @@ struct HomeView: View {
                     HStack(spacing: 16) {
                         
                         Button(action: {
-                            print("Button 1 tapped")
+                            print("Button 1 tapped4")
                         }) {
                             Rectangle()
                                 .fill(Color.gray.opacity(0.4))
